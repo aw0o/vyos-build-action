@@ -85,6 +85,7 @@ jobs:
         with:
           name: vyos-${{ env.BUILD_VERSION }}-${{ env.BUILD_ARCH }}-images
           path: ${{ env.WORKING_DIR }}/${{ env.ARTIFACTS_DIR }}
+          tag_name: ${{ steps.tag.outputs.tag }}
 
   release:
     needs: build
