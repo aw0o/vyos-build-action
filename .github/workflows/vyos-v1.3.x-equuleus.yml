@@ -72,6 +72,8 @@ jobs:
         with:
           name: VyOS v${{ env.BUILD_VERSION }} LTS Release
           body: VyOS v${{ env.BUILD_VERSION }} LTS Release
+          tag_name: ${{ env.BUILD_VERSION }}
+          tag: ${{ env.BUILD_VERSION }}
           draft: false
           prerelease: false
           files: |
